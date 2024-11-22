@@ -1,1 +1,1 @@
-web: gunicorn restaurant_booking.wsgi
+web: gunicorn --bind 0.0.0.0:$PORT restaurant_booking.wsgi:application
